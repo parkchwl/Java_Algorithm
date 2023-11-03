@@ -9,8 +9,9 @@ public class GreedyAlgorithm2 {
         Scanner in = new Scanner(System.in);
 
         int N = in.nextInt();
-        int[][] time = new int[N][2];
+        int[][] time = new int[N][2]; //N을 입력받고 N개의 시간 간격을 입력받는다.
 
+        //시간 간격은 시작 시간과 종료 시간으로 이루어진 2차원 배열로 저장된다.
 
         for(int i = 0; i < N; i++) {
             time[i][0] = in.nextInt();	// 시작시간
@@ -18,8 +19,9 @@ public class GreedyAlgorithm2 {
         }
 
 
-        // 끝나는 시간을 기준으로 정렬하기 위해 compare 재정의
-        Arrays.sort(time, new Comparator<int[]>() {
+        // 끝나는 시간을 기준으로 오름차순으로 정렬하기 위해 compare 재정의
+        Arrays.sort(time, new Comparator<int[]>() { //Arrays.sort()를 사용하여 2차원 배열 time을 정렬한다.
+
 
             @Override
             public int compare(int[] o1, int[] o2) {
@@ -37,7 +39,7 @@ public class GreedyAlgorithm2 {
         int count = 0;
         int prev_end_time = 0;
 
-        for(int i = 0; i < N; i++) {
+        for(int i = 0; i < N; i++) {    //정렬된 time을 확인하며 Greedy 수행. 조건을 만족하는 경우에 해당 일정 선택후 count를 증가시킨다.
 
             // 직전 종료시간이 다음 회의 시작 시간보다 작거나 같다면 갱신
             if(prev_end_time <= time[i][0]) {
