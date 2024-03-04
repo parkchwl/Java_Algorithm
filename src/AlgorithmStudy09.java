@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class AlgorithmStudy09 {
+public class AlgorithmStudy09 { // BOJ_1495_기타리스트
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         

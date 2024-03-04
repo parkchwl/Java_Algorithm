@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-public class AlgorithmStudy08 {
+public class AlgorithmStudy08 { //BOJ_1941_소문난칠공주
     static char[][] arr = new char [5] [5];
     static boolean [] [] selected = new boolean[5][5];
     static int res = 0;
@@ -86,5 +86,4 @@ public class AlgorithmStudy08 {
     private static boolean check(int nextRow, int nextCol) {
         return nextRow >= 0 && nextRow < 5 && nextCol >= 0 && nextCol < 5;
     }
-}
 }
