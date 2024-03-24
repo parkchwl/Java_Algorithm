@@ -1,4 +1,4 @@
-//BOJ_10845
+//BOJ_10845 큐
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
