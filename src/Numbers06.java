@@ -1,3 +1,4 @@
+//BOJ 1929 소수구하기
 import java.util.Scanner;
  
  
