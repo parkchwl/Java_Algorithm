@@ -1,4 +1,4 @@
-//최소 공배수
+// BOJ_1934 최소 공배수
 import java.util.*;
 public class AlgorithmStudy25 {
     static int n;
