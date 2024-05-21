@@ -1,7 +1,8 @@
+// BOJ_11052
 import java.util.Scanner;
 
-public class AlgorithmStudy37 {
-    public static void Main (String[] args) {
+class AlgorithmStudy37 {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         int[] dp = new int[N + 1];
