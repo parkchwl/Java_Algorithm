@@ -1,4 +1,4 @@
-// BOJ 11726
+// BOJ 11726 2xn타일링
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

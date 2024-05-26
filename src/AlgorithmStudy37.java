@@ -1,4 +1,4 @@
-// BOJ_11052
+// BOJ_11052 카드 구매하기
 import java.util.Scanner;
 
 class AlgorithmStudy37 {

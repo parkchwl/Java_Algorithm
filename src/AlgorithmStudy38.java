@@ -1,28 +1,17 @@
-// BOJ_2193
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+//BOJ 11727 2xn 타일링 2
+import java.util.Scanner;
 
 public class AlgorithmStudy38 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
 
-    public static void main(String[] args) throws IOException {
+        int[] dp = new int[1001];
+        dp[1] = 1;
+        dp[2] = 3;
+        for (int i = 3; i <= n; i++)
+            dp[i] = (dp[i - 1] + 2 * dp[i - 2]) % 10007;
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-        int N = Integer.parseInt(br.readLine());
-
-        long [] d = new long[N+1]; // 0부터 N까지라서 N+1임
-
-        d[0] = 0; 
-        d[1] = 1;
-
-
-
-        for( int i =2; i<=N; i++){
-            d[i] = d[i-1]+ d[i-2];
-        }
-
-        System.out.println(d[N]);
-
+        System.out.println(dp[n]);
     }
 }

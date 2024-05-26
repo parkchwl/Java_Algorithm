@@ -1,4 +1,5 @@
-// BOJ 9095
+// BOJ 9095 1,2,3 더하기
+
 import java.util.*;
 
 public class AlgorithmStudy39 {

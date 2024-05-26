@@ -1,4 +1,4 @@
-//BOj 1463
+//BOj 1463 1로 만들기
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
