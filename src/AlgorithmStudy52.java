@@ -1,9 +1,9 @@
+// BOJ_1149_RGB거리
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-// BOJ_1149_RGB거리
 public class AlgorithmStudy52 {
 
     final static int Red = 0;
