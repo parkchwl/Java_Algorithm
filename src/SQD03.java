@@ -9,7 +9,7 @@ public class SQD03 {
             String input = scanner.nextLine();
             if (input.equals(".")) break;  // 종료 조건
 
-            if (solve(input)) {
+            if (isBalanced(input)) {
                 System.out.println("yes");
             } else {
                 System.out.println("no");
@@ -19,7 +19,7 @@ public class SQD03 {
         scanner.close();
     }
 
-    public static boolean solve(String str) {
+    public static boolean isBalanced(String str) {
         Stack<Character> stack = new Stack<>();
 
         for (int i = 0; i < str.length(); i++) {
